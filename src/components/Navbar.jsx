@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function NavbarUser() {
   return (
@@ -44,12 +45,12 @@ export default function NavbarUser() {
             >
               FAQ
             </a>
-            <a
+            <Link
               className="nav-item nav-link ml-3 bg-success text-white font-weight-bold rounded pl-3 pr-3 custom-custom-user-cursor"
-              href="/register"
+              to={"/register"}
             >
               Register
-            </a>
+            </Link>
           </div>
         </div>
       </div>
