@@ -1,10 +1,10 @@
-import axios from "axios";
+import axios from 'axios';
 
-const API_URL = "https://server-binar.herokuapp.com/api/auth/";
+const API_URL = 'https://server-binar.herokuapp.com/api/auth/';
 
 const register = (username, email, password) => {
   //Bakal return suatu object
-  return axios.post(API_URL + "signup", {
+  return axios.post(API_URL + 'signup', {
     username,
     email,
     password,
@@ -27,7 +27,7 @@ const login = (email, password) => {
 };
 
 const logout = () => {
-  localStorage.removeItem("user");
+  localStorage.removeItem('user');
 };
 
 export default {
