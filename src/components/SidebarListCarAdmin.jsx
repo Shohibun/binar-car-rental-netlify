@@ -1,6 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faTruck } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom";
 
 export default function SidebarDashboard() {
     return (
@@ -16,7 +17,7 @@ export default function SidebarDashboard() {
                         <div className="m-auto">
                             <div className="text-center">
                                 <FontAwesomeIcon icon={faHouse} className="custom-size-aweseome"/><br/>
-                                <a href="/dashboard-admin" className="custom-font-1 text-white">Dashboard</a>
+                                <Link to={"/dashboard-admin"} className="custom-font-1 text-white">Dashboard</Link>
                             </div>
                         </div>
                     </div>
@@ -25,7 +26,7 @@ export default function SidebarDashboard() {
                         <div className="m-auto custom-parent-menu-active p-3">
                             <div className="text-center">
                                 <FontAwesomeIcon icon={faTruck} className="custom-size-aweseome"/><br/>
-                                <a href="/list-car-admin" className="custom-font-1 text-white">Cars</a>
+                                <Link to={"/list-car-admin"} className="custom-font-1 text-white">Cars</Link>
                             </div>
                         </div>
                     </div>
